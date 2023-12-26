@@ -21,7 +21,7 @@ function updateList() {
     edit.innerText = "edit";
     edit.addEventListener("click", () => {
       document.getElementById("input").value = arr.find(
-        (item, i) => i == index
+        (item, index) => i == index
       );
       edit.style.display = "flex";
       arr.splice(index, 1);
